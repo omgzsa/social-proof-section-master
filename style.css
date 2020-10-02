@@ -3,6 +3,10 @@
 }
 
 body {
+    background-image: url(../images/bg-pattern-top-mobile.svg),
+	                  url(../images/bg-pattern-bottom-mobile.svg);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
@@ -67,13 +71,13 @@ img {
 /* LAYOUT */
 
 .container {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     margin: 0 auto;
     max-width: 1380px;
 }
 
 .intro {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0 auto;
     padding: 2em;
     width: 100%;
@@ -81,7 +85,7 @@ img {
 }
 
 .rating {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: auto;
     /* padding: 2em; */
     text-align: center;
@@ -100,7 +104,7 @@ img {
 }
 
 .reviews {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 0 auto;
     padding: 2em;
     width: 100%;
@@ -116,7 +120,7 @@ img {
     display: grid;
         grid-template-areas: 
             "image image name name name"
-            "text text text text text";        ;
+            "text text text text text";        
     background: hsl(300, 43%, 22%);
     padding: 2rem;
     margin-bottom: 10px;
@@ -151,6 +155,11 @@ img {
 }
 
 @media (min-width:1440px) {
+    body {
+		background-image: url(../images/bg-pattern-top-desktop.svg),
+	                  url(../images/bg-pattern-bottom-desktop.svg);
+	
+    }
     .container {
         padding-top: 5em;
     }
