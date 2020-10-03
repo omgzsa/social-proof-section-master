@@ -3,8 +3,8 @@
 }
 
 body {
-    background-image: url(../images/bg-pattern-top-mobile.svg),
-	                  url(../images/bg-pattern-bottom-mobile.svg);
+    background-image: url('./images/bg-pattern-bottom-mobile.svg'),
+	                  url('./images/bg-pattern-bottom-desktop.svg');
 	background-position: left top, right bottom;
 	background-repeat: no-repeat, no-repeat;
     margin: 0;
@@ -30,7 +30,7 @@ img {
 
 .card__img {
     grid-area: image;
-    width: 65px;
+    width: 40px;
     border-radius: 50%;
     margin-bottom: 7px;
 }
@@ -40,13 +40,16 @@ img {
 
 .intro__title {
     color: hsl(300, 43%, 22%);
-    font-size: 2.25rem;
+    font-size: 3.10rem;
     line-height: 1.1;
+    font-weight: 700;
 }
 
 .intro__text {
     color: hsl(303, 10%, 53%);
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-top: -1.5rem;
+
 }
 
 .rating__text {
@@ -66,6 +69,7 @@ img {
 .card__text {
     grid-area: text;
     color: hsl(0, 0%, 100%);
+    font-size: 1.35em;
 }
 
 /* LAYOUT */
@@ -78,10 +82,13 @@ img {
 
 .intro {
     /* border: 2px solid green; */
-    margin: 0 auto;
-    padding: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 6rem;
+    margin-right: 7rem;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding-top: 2em;
 }
 
 .rating {
@@ -119,7 +126,7 @@ img {
     margin: 0 auto;
     display: grid;
         grid-template-areas: 
-            "image image name name name"
+            "image name name name name"
             "text text text text text";        
     background: hsl(300, 43%, 22%);
     padding: 2rem;
@@ -156,8 +163,8 @@ img {
 
 @media (min-width:1440px) {
     body {
-		background-image: url(../images/bg-pattern-top-desktop.svg),
-	                  url(../images/bg-pattern-bottom-desktop.svg);
+		background-image: url('./images/bg-pattern-top-desktop.svg'),
+	                  url('./images/bg-pattern-bottom-desktop.svg');
 	
     }
     .container {
@@ -200,17 +207,24 @@ img {
         width: 100%;
         display: flex;
         justify-content: space-around;
+        padding-left: 6em;
+    height: 20em;
     }
 
     .card__one {
         align-self: flex-start;
+        height: 20em;
     }
 
     .card__two {
         align-self: center;
+        height: 20em;
+        margin-top: 3em;
     }
 
     .card__three {
         align-self: flex-end;
+        height: 20em;
+        margin-bottom: -2em;
     }
 }
