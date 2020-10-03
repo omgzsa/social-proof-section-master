@@ -20,16 +20,7 @@ img {
     max-width: 100%;
 }
 
-/* .bg-top {
-    position: absolute;
-} */
-
-/* .bg-bottom {
-    position: absolute;
-} */
-
 .card__img {
-    grid-area: image;
     width: 2.5rem
     border-radius: 50%;
     margin-bottom: 7px;
@@ -64,7 +55,6 @@ img {
 }
 
 .card__text {
-    grid-area: text;
     color: hsl(0, 0%, 100%);
 }
 
@@ -108,19 +98,11 @@ img {
     margin: 0 auto;
     padding: 2em;
     width: 100%;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; */
-
 }
 
 .card {
     /* border: 2px solid yellow; */
     margin: 0 auto;
-    display: grid;
-        grid-template-areas: 
-            "image image name name name"
-            "text text text text text";        
     background: hsl(300, 43%, 22%);
     padding: 2rem;
     margin-bottom: 10px;
@@ -131,9 +113,6 @@ img {
 }
 
 .name_status {
-    grid-area: name;
-    justify-self: stretch;
-    align-self: center;
     display: flex;
     flex-direction: column;
 }
