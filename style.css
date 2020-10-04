@@ -22,14 +22,6 @@ img {
   max-width: 100%;
 }
 
-/* .bg-top {
-    position: absolute;
-} */
-
-/* .bg-bottom {
-    position: absolute;
-} */
-
 .card__img {
   grid-area: image;
   width: 40px;
