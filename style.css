@@ -177,18 +177,15 @@ img {
   }
 
   .intro__rating-one {
-    justify-content: flex-start;
     margin-right: 0px;
   }
 
   .intro__rating-two {
-    justify-content: flex-start;
     margin-left: 30px;
     margin-right: -30px;
   }
 
   .intro__rating-three {
-    justify-content: flex-start;
     margin-left: 60px;
     margin-right: -60px;
   }
